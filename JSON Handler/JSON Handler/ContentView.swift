@@ -8,9 +8,12 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State var text = "text"
+    @State var font = NSFont.systemFont(ofSize: 15)
+    
     var body: some View {
-        Text("Hello, World!")
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
+        TextView(text: $text, font: $font)
     }
 }
 

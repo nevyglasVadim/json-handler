@@ -12,6 +12,7 @@
 		BBC4871726C84394004B0757 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBC4871626C84394004B0757 /* Assets.xcassets */; };
 		BBC4871A26C84394004B0757 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBC4871926C84394004B0757 /* Preview Assets.xcassets */; };
 		BBC4871D26C84394004B0757 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBC4871B26C84394004B0757 /* Main.storyboard */; };
+		BBC4872726C8486A004B0757 /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC4872626C8486A004B0757 /* TextView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		BBC4871C26C84394004B0757 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BBC4871E26C84394004B0757 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BBC4871F26C84394004B0757 /* JSON_Handler.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = JSON_Handler.entitlements; sourceTree = "<group>"; };
+		BBC4872626C8486A004B0757 /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 		BBC4871126C84391004B0757 /* JSON Handler */ = {
 			isa = PBXGroup;
 			children = (
+				BBC4872526C8484D004B0757 /* Custom Views */,
 				BBC4871226C84391004B0757 /* AppDelegate.swift */,
 				BBC4871426C84391004B0757 /* ContentView.swift */,
 				BBC4871626C84394004B0757 /* Assets.xcassets */,
@@ -72,6 +75,14 @@
 				BBC4871926C84394004B0757 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BBC4872526C8484D004B0757 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				BBC4872626C8486A004B0757 /* TextView.swift */,
+			);
+			path = "Custom Views";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,6 +155,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBC4872726C8486A004B0757 /* TextView.swift in Sources */,
 				BBC4871526C84391004B0757 /* ContentView.swift in Sources */,
 				BBC4871326C84391004B0757 /* AppDelegate.swift in Sources */,
 			);
