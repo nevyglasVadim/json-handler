@@ -7,24 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BBC4871326C84391004B0757 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC4871226C84391004B0757 /* AppDelegate.swift */; };
+		BBC4871326C84391004B0757 /* JSONHandlerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC4871226C84391004B0757 /* JSONHandlerApp.swift */; };
 		BBC4871526C84391004B0757 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC4871426C84391004B0757 /* ContentView.swift */; };
 		BBC4871726C84394004B0757 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBC4871626C84394004B0757 /* Assets.xcassets */; };
 		BBC4871A26C84394004B0757 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBC4871926C84394004B0757 /* Preview Assets.xcassets */; };
-		BBC4871D26C84394004B0757 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBC4871B26C84394004B0757 /* Main.storyboard */; };
 		BBC4872726C8486A004B0757 /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC4872626C8486A004B0757 /* TextView.swift */; };
+		BBC4872C26C85B6C004B0757 /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC4872B26C85B6C004B0757 /* FileManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BBC4870F26C84391004B0757 /* JSON Handler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "JSON Handler.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BBC4871226C84391004B0757 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BBC4871226C84391004B0757 /* JSONHandlerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONHandlerApp.swift; sourceTree = "<group>"; };
 		BBC4871426C84391004B0757 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BBC4871626C84394004B0757 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BBC4871926C84394004B0757 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		BBC4871C26C84394004B0757 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BBC4871E26C84394004B0757 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BBC4871F26C84394004B0757 /* JSON_Handler.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = JSON_Handler.entitlements; sourceTree = "<group>"; };
 		BBC4872626C8486A004B0757 /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
+		BBC4872B26C85B6C004B0757 /* FileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,13 +57,8 @@
 		BBC4871126C84391004B0757 /* JSON Handler */ = {
 			isa = PBXGroup;
 			children = (
-				BBC4872526C8484D004B0757 /* Custom Views */,
-				BBC4871226C84391004B0757 /* AppDelegate.swift */,
-				BBC4871426C84391004B0757 /* ContentView.swift */,
-				BBC4871626C84394004B0757 /* Assets.xcassets */,
-				BBC4871B26C84394004B0757 /* Main.storyboard */,
-				BBC4871E26C84394004B0757 /* Info.plist */,
-				BBC4871F26C84394004B0757 /* JSON_Handler.entitlements */,
+				BBC4872826C859EB004B0757 /* Config */,
+				BBC4872526C8484D004B0757 /* Sources */,
 				BBC4871826C84394004B0757 /* Preview Content */,
 			);
 			path = "JSON Handler";
@@ -77,12 +72,41 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		BBC4872526C8484D004B0757 /* Custom Views */ = {
+		BBC4872526C8484D004B0757 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				BBC4872A26C85B5F004B0757 /* Utils */,
+				BBC4872926C85A87004B0757 /* UI */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		BBC4872826C859EB004B0757 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				BBC4871626C84394004B0757 /* Assets.xcassets */,
+				BBC4871E26C84394004B0757 /* Info.plist */,
+				BBC4871F26C84394004B0757 /* JSON_Handler.entitlements */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		BBC4872926C85A87004B0757 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				BBC4871226C84391004B0757 /* JSONHandlerApp.swift */,
+				BBC4871426C84391004B0757 /* ContentView.swift */,
 				BBC4872626C8486A004B0757 /* TextView.swift */,
 			);
-			path = "Custom Views";
+			path = UI;
+			sourceTree = "<group>";
+		};
+		BBC4872A26C85B5F004B0757 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				BBC4872B26C85B6C004B0757 /* FileManager.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,7 +166,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BBC4871D26C84394004B0757 /* Main.storyboard in Resources */,
 				BBC4871A26C84394004B0757 /* Preview Assets.xcassets in Resources */,
 				BBC4871726C84394004B0757 /* Assets.xcassets in Resources */,
 			);
@@ -157,22 +180,12 @@
 			files = (
 				BBC4872726C8486A004B0757 /* TextView.swift in Sources */,
 				BBC4871526C84391004B0757 /* ContentView.swift in Sources */,
-				BBC4871326C84391004B0757 /* AppDelegate.swift in Sources */,
+				BBC4871326C84391004B0757 /* JSONHandlerApp.swift in Sources */,
+				BBC4872C26C85B6C004B0757 /* FileManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		BBC4871B26C84394004B0757 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BBC4871C26C84394004B0757 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		BBC4872026C84394004B0757 /* Debug */ = {
@@ -295,19 +308,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "JSON Handler/JSON_Handler.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "JSON Handler/Config/JSON_Handler.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"JSON Handler/Preview Content\"";
 				DEVELOPMENT_TEAM = 24847QL8N7;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "JSON Handler/Info.plist";
+				INFOPLIST_FILE = "JSON Handler/Config/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.vadim-nevyglas.JSON-Handler";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -319,19 +332,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "JSON Handler/JSON_Handler.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "JSON Handler/Config/JSON_Handler.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"JSON Handler/Preview Content\"";
 				DEVELOPMENT_TEAM = 24847QL8N7;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "JSON Handler/Info.plist";
+				INFOPLIST_FILE = "JSON Handler/Config/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.vadim-nevyglas.JSON-Handler";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
